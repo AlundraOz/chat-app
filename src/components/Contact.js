@@ -10,12 +10,10 @@ function Contact() {
     <div class="about">
       <div class="name"><h4>{name}</h4></div>
             <div class="status">
-              <i class={classStatus}></i>{statusText}
+              
             </div>
           </div>
   </div>
 }
-
-ReactDOM.render(element, document.getElementById('root'));
 
 export default Contact
