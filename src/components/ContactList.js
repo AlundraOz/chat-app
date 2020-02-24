@@ -23,20 +23,24 @@ let contacts = [{
     status:true,},
   ]
 
-function ContactList() {
-    return (
-        contacts.map(
-            function(user){
-            return(
+ const ContactList = () => (
+       <div>
+        {contacts.map(
+            (item,i) =>
                 <Contact 
-                    image={user.avatar}
-                    name={user.name} 
-                    status={user.status}
+                    key={i}
+                    image={item.avatar}
+                    name={item.name} 
+                    status={item.status}
                 />
-            );
-            }
-        )
-    )
-}
+            )
+        }
+        </div>
+                )
+            
+        
+    
 
 export default ContactList
+
+// https://rogerdudler.github.io/git-guide/index.es.html //
